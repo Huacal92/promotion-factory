@@ -12085,10 +12085,26 @@ p {
 }
 
 .tag {
+  display: inline-block;
+  position: relative;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.tag::before {
+  content: "";
+  background: linear-gradient(45deg, rgb(235, 101, 29) 0%, rgb(236, 109, 30) 35%, rgb(240, 130, 34) 88%, rgb(242, 144, 36) 100%);
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 15px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 /* Navegacion*/
@@ -12509,8 +12525,9 @@ p {
 }
 .services-pf {
   background-color: #f8f9fa;
-  padding: 90px 0px;
+  padding: 190px 0px;
   position: relative;
+  overflow: hidden;
 }
 .services-pf .header-title {
   padding: 90px 0px;
@@ -12521,25 +12538,55 @@ p {
   top: 0;
   left: 0;
   display: block;
-  background-image: url("../../images/bg-seccion-servicios-promotion-factory.webp");
+  background-image: url("../images/onda-promotion-factory-01.svg");
   background-size: cover;
+  transform: rotate(180deg);
   width: 100%;
-  height: 100%;
+  height: 530px;
   z-index: 1;
+}
+.services-pf::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: url("../images/onda-promotion-factory-02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  opacity: 1;
 }
 .services-pf .header-title {
   position: relative;
   z-index: 2;
+}
+.services-pf .header-title .tag {
+  color: #f8f9fa;
+}
+.services-pf .header-title .tag::before {
+  background: #000;
+  left: 51px;
+}
+.services-pf .header-title h1, .services-pf .header-title .h1 {
+  color: #fff;
+}
+.services-pf .header-title p {
+  color: #f8f9fa;
 }
 .services-pf .services-grid {
   z-index: 3;
 }
 
 .icon-service-box {
+  position: relative;
   width: 100%;
   height: 390px;
+  max-height: auto;
+  background-color: #fff;
   padding: 20px 30px 20px 30px;
-  position: relative;
   margin-bottom: 15px;
   border-radius: 30px;
   border: 1px solid #dee2e6;
@@ -12904,7 +12951,8 @@ p {
 }
 
 .promocionales-pf {
-  background: #dee2e6;
+  background: #e9ecef;
+  position: relative;
 }
 .promocionales-pf .owl-carousel .owl-dots {
   text-align: center;
@@ -12922,9 +12970,24 @@ p {
 .promocionales-pf .owl-carousel .owl-dot.active {
   background-color: #eb651d;
 }
+.promocionales-pf::before {
+  content: "";
+  position: absolute;
+  bottom: -24%;
+  left: 0;
+  display: block;
+  background-image: url("../images/onda-promotion-factory-02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  opacity: 1;
+}
 
 .about-us {
-  background: #dee2e6;
+  background: #e9ecef;
   position: relative;
   overflow: hidden;
 }
@@ -12964,13 +13027,27 @@ p {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  background-image: url("../images/bg-stats-seccion.webp");
+  bottom: -3px;
+  background-image: url("../images/puntos-promotion-factory-01.svg");
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 460px;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.5;
+  z-index: 0;
+}
+.about-us::after {
+  content: "";
+  position: absolute;
+  left: -6%;
+  top: -40px;
+  background-image: url("../images/isotipo-promotion-factory.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1090px;
+  z-index: 0;
+  opacity: 0.15;
   z-index: 0;
 }
 .about-us .about-box:hover {
@@ -12986,57 +13063,18 @@ p {
 
 .footer-section {
   position: relative;
-  background: #000;
-}
-.footer-section::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/bg-stats-seccion.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #f8f9fa;
 }
 .footer-section .contact-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   overflow: hidden;
-}
-.footer-section .contact-section .img-bg-seccion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  z-index: 0;
-}
-.footer-section .contact-section .img-bg-seccion img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
 }
 .footer-section .contact-section .title-header {
   position: relative;
   z-index: 4;
   text-align: center;
-}
-.footer-section .contact-section::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/bg-seccion-contacto-promotion-factory.webp");
-  background-size: cover;
-  background-attachment: fixed;
 }
 .footer-section .overlay-3 {
   z-index: 2;
@@ -13044,59 +13082,52 @@ p {
 .footer-section.section {
   padding: 0 0 !important;
 }
-.footer-section .form-contact-pf {
+.footer-section .contact-section .form-contact-pf {
   position: relative;
   z-index: 2;
-  margin-top: 90px;
   padding: 30px 0;
-}
-.footer-section .form-contact-pf textarea {
-  width: 100%;
-  padding: 10px;
-  height: 130px;
-}
-.footer-section .form-contact-pf label {
-  color: #f8f9fa;
-}
-.footer-section .form-contact-pf .btn-form {
   background: transparent;
-  color: #000;
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  border-color: #000;
-  margin-top: 15px;
-  transition: all 0.2s ease-in-out;
-}
-.footer-section .form-contact-pf .btn-form:hover {
-  background: #000;
-  color: #fff;
-}
-.footer-section .card {
-  background: transparent;
-  border-color: #eb651d;
-  padding: 90px 50px;
+  border: none;
   border-radius: 12px;
 }
-.footer-section .card .card-title {
-  color: #f8f9fa;
-}
-.footer-section .card .card-header {
+.footer-section .contact-section .form-contact-pf .card-header {
   border-color: transparent;
   background: transparent;
   text-align: center;
+  padding: 40px 0;
 }
-.footer-section .card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.footer-section .contact-section .form-contact-pf .card-header h1, .footer-section .contact-section .form-contact-pf .card-header .h1 {
   background: linear-gradient(45deg, rgb(235, 101, 29) 0%, rgb(236, 109, 30) 35%, rgb(240, 130, 34) 88%, rgb(242, 144, 36) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent;
+}
+.footer-section .contact-section .form-contact-pf .card-header p {
+  padding: 0 60px;
+}
+.footer-section .contact-section .form-contact-pf .field-row {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-section .contact-section .form-contact-pf input, .footer-section .contact-section .form-contact-pf textarea {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #343a40;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  line-height: 30px;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.93;
-  border-radius: 12px;
+  border-radius: 3px;
+  height: 60px;
+}
+.footer-section .contact-section .form-contact-pf textarea {
+  resize: none;
+  min-height: 140px;
+  margin-top: 20px;
+}
+.footer-section .contact-section .form-contact-pf button {
+  color: #f8f9fa;
 }
 .footer-section .footer {
   padding: 120px 0 80px 0;
