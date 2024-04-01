@@ -19,7 +19,7 @@ $(document).on("ready", function () {
 
 /* Menus Color Transparente */
 
-window.addEventListener('scroll', function () {
+/* window.addEventListener('scroll', function () {
   let menu1 = document.getElementById('site-header');
   let menu2 = document.getElementById('site-header-static');
   let scrollPosition = window.scrollY;
@@ -30,16 +30,16 @@ window.addEventListener('scroll', function () {
   if (windoWidth <= 1090) {
     menu2.classList.add('hidden-menu');
     menu1.classList.remove('hidden-menu');
-  }else {
+  }else{
     if (scrollPosition >= menuHeight) {
       menu2.classList.add('hidden-menu');
       menu1.classList.remove('hidden-menu');
-    }else {
+    }else{
       menu2.classList.remove('hidden-menu');
       menu1.classList.add('hidden-menu');
     }
   }
-});
+}); */
 
 
 
