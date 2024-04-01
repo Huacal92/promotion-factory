@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFBF0D;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#EB651D;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M306,307.5v116.1c0,20.8,10,48.4,32.2,48.4H391l97,42.1v-42.1h32.8c22.3,0,37.4-28,37.4-48.4V307.5
+				c0-20.6-14.5-33.3-37.4-33.3H338.2C315.9,274.2,306,286.5,306,307.5z"/>
+			<circle class="st1" cx="481.4" cy="368.8" r="17"/>
+			<circle class="st1" cx="430.4" cy="368.8" r="17"/>
+			<circle class="st1" cx="378.7" cy="368.8" r="17"/>
+		</g>
+		<path class="st2" d="M352.9,172.7H127.8c-28.3,0-45.6,17.6-45.6,43v143c0,25,18.1,58.5,45.6,58.5h40.3v52.9l119.7-52.9h65.1
+			c27.4,0,44.1-32.9,44.1-58.5v-143C397,189.9,380.3,172.7,352.9,172.7z"/>
+		
+			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -154.2802 210.1002)" class="st1" cx="176.5" cy="291.3" rx="20.9" ry="20.9"/>
+		
+			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -135.8808 254.5203)" class="st1" cx="239.3" cy="291.3" rx="20.9" ry="20.9"/>
+		
+			<ellipse transform="matrix(0.229 -0.9734 0.9734 0.229 -49.9149 519.5477)" class="st1" cx="303" cy="291.3" rx="20.9" ry="20.9"/>
+	</g>
+	<polygon class="st0" points="86,86 83.6,105.7 98.5,118.9 79,122.7 71.2,140.9 61.5,123.6 41.7,121.7 55.2,107.2 50.9,87.8 
+		68.9,96.1 	"/>
+</g>
+</svg>
