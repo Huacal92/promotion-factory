@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'iconspromotion';
+  src:  url('../fonts/iconspromotion.eot?swosq5');
+  src:  url('../fonts/iconspromotion.eot?swosq5#iefix') format('embedded-opentype'),
+    url('../fonts/iconspromotion.ttf?swosq5') format('truetype'),
+    url('../fonts/iconspromotion.woff?swosq5') format('woff'),
+    url('../fonts/iconspromotion.svg?swosq5#iconspromotion') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconspromotion' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calidad:before {
+  content: "\e908";
+  color: #e95b0c;
+}
+.icon-innovacion:before {
+  content: "\e909";
+  color: #e95b0c;
+}
+.icon-prototipo:before {
+  content: "\e90a";
+  color: #e95b0c;
+}
+.icon-servicio-cliente:before {
+  content: "\e90b";
+  color: #e95b0c;
+}
+.icon-corte-grabado-laser:before {
+  content: "\e900";
+  color: #e95b0c;
+}
+.icon-electrosellado:before {
+  content: "\e901";
+  color: #e95b0c;
+}
+.icon-grafado:before {
+  content: "\e902";
+  color: #e95b0c;
+}
+.icon-impresion-screen:before {
+  content: "\e903";
+  color: #e95b0c;
+}
+.icon-microinyeccion:before {
+  content: "\e904";
+  color: #e95b0c;
+}
+.icon-termodoblado:before {
+  content: "\e905";
+  color: #e95b0c;
+}
+.icon-termoformado:before {
+  content: "\e906";
+  color: #e95b0c;
+}
+.icon-troquelado:before {
+  content: "\e907";
+  color: #e95b0c;
+}
