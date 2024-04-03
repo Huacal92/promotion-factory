@@ -33,220 +33,210 @@
 </head>
 <body>
 <!--header-->
-<header id="site-header" class="fixed-top shadow">
-    <div class="container" class="menu-white">
-        <nav class="navbar navbar-expand-xl stroke px-0 pt-lg-0">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logos/logo-promotion-factory--main.svg" alt="Logo Promotion Factory">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navBarMenu" aria-controls="#navBarMenu" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navBarMenu">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active mx-2" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs">¿Quienes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicesPF">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectsPF">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footerSection">Contacto</a>
-                    </li>
-
-                </ul>
-                <div class="menu-rigth d-flex align-items-center justify-content-between">
-                    <div class="me-lg-3 mt-lg-0 me-lg-4">
-                        <a href="#" class="btn btn-primary btn-lg btn-pf pulse"><i class="fa-brands fa-whatsapp"></i> Cotizar Ahora</a>
+<header id="site-header" class="fixed-top shadow site-header">
+        <div class="bar-header" id="barHeader">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-8 col-md-8">
+                        <div class="contact-bar-top">
+                            <ul class="d-flex align-items-center justify-content-start" style="height: 40px;">
+                                <li class="nav-item"><a href="#"><i class="fa-brands fa-whatsapp"></i> +57 311 111 1111</a></li>
+                                <li class="nav-item"><a href="#"><i class="fa-solid fa-envelope"></i> contacto@promotionfactory.com</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <li class="nav-item dropdown lenguage">
-                        <a class="nav-link dropdown-toggle" href="#" id="navIdioma" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navIdioma">
-                          <li><a class="dropdown-item" href="#">Ingles</a></li>
-                          <li><a class="dropdown-item" href="#">Español</a></li>
-                        </ul>
-                    </li>
+                    <div class="col-4 col-md-4">
+                        <div class="bar-rigth">
+                            <ul class="d-flex justify-content-end align-items-center" style="height: 40px;">
+                                <li class="nav-item mx-3"><a class="login" href="#">Iniciar sesión </a></li>
+                                <li><button class="dropdown-toggle" type="button" id="menuLenguaje" data-bs-toggle="dropdown" aria-expanded="false" href="#">ES</button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="menuLenguaje">
+                                    <li><a class="dropdown-item" href="#">Español</a></li>
+                                    <li><a class="dropdown-item" href="#">Ingles</a></li>
+                                    <li><a class="dropdown-item" href="#">Frances</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+            <div class="container container-md-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logos/logo-promotion-factory--main.svg" alt="Logo Promotion Factory">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navBarMenu" aria-controls="#navBarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navBarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-2" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicesPF">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectsPF">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footerSection">Contacto</a>
+                        </li>
+    
+                    </ul>
+                    <div class="menu-rigth d-flex align-items-center justify-content-between">
+                        <div class="me-lg-3 mt-lg-0 me-lg-4 py-3">
+                            <a href="#" class="btn btn-primary btn-lg btn-pf">Cotizar Ahora</a>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </nav>
-    </div>
 </header>
-
-    <div class="container" id="menuStatic" class="menu-static">
-        <nav class="navbar navbar-expand-xl stroke px-0 pt-lg-0">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logos/logo-promotion-factory--white-letters.svg" alt="Logo Promotion Factory">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navBarMenu" aria-controls="#navBarMenu" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navBarMenu">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active mx-2" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs">¿Quienes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicesPF">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectsPF">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footerSection">Contacto</a>
-                    </li>
-
-                </ul>
-                <div class="menu-rigth d-flex align-items-center justify-content-between">
-                    <div class="me-lg-3 mt-lg-0 me-lg-4">
-                        <a href="#" class="btn btn-primary btn-lg btn-pf pulse"><i class="fa-brands fa-whatsapp"></i> Cotizar Ahora</a>
-                    </div>
-                    <li class="nav-item dropdown lenguage">
-                        <a class="nav-link dropdown-toggle" href="#" id="navIdioma" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navIdioma">
-                          <li><a class="dropdown-item" href="#">Ingles</a></li>
-                          <li><a class="dropdown-item" href="#">Español</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header> -->
 <!--//header-->
 <!-- Banner Main -->
 <div class="banner-pf banner-slider">
     <div class="owl-one owl-carousel owl-theme">
+        <div class="item-banner">
+            <div class="banner-info banner-view header-hero-02">    
+                <div class="overlay-2"></div>
+                <div class="container">
+                    <div class="content-banner">
+                        <span>Material P.O.P</span>
+                        <h1>Impulsa tu marca con <span class="orange">Promotion Factory</span></h1>
+                        <p>Destaca con nuestros productos promocionales personalizados. <b>¡Haz que tu marca brille!</b></p>
+                        <a href="#proyectsPF" class="btn btn-primary">Explorar Productos</a>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+        
         <div class="item-banner">
             <div class="banner-info banner-view header-hero-01">    
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="content-banner">
                         <span>Material P.O.P</span>
-                        <h1 class="display-1">Transformamos tus ideas en productos de calidad</h1>
-                        <!-- <a href="#" class="btn btn-primary btn-lg my-3">Ver Servicios</a> -->
+                        <h1 class="title-banner">Transformamos tus ideas en productos de calidad</h1>
+                        <div class="container grid-services">
+                            <div class="row">
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-termoformado"></i>
+                                        <div class="content-service">
+                                            <span>Servicio</span>
+                                            <h5>Termoformado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-grafado"></i>
+                                        <div class="content-service">
+                                            <span>Servicio</span>
+                                            <h5>Grafado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-termodoblado"></i>
+                                        <div class="content-service">
+                                            <span>Servicio</span>
+                                            <h5>Termodoblado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-troquelado"></i>
+                                        <div class="content-service">
+                                            <span>Servicio</span>
+                                            <h5>Troquelado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a href="#proyectsPF" class="btn btn-primary">Ver productos</a>
                     </div>
-                    <div class="container grid-services">
-                        <div class="row">
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-termoformado"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Termoformado</h5>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-grafado"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Grafado</h5>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-termodoblado"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Termodoblado</h5>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-troquelado"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Troquelado</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
             </div>
         </div>
-        <div class="item-banner">
-            <div class="banner-info banner-view header-hero-02">    
-                <div class="overlay-2"></div>
-                <div class="container">
-                    <div class="content-banner">
-                        <span class="text-tag">Material P.O.P</span>
-                        <h1 class="title-banner">Impulsa tu marca con Promotion Factory</h1>
-                        <p class="text-banner">Destaca con nuestros productos promocionales personalizados. <b>¡Haz que tu marca brille!</b></p>
-                        <a href="#" class="btn btn-primary btn-lg my-4">Explorar Productos</a>
-                    </div>
-                     
-                </div>
-            </div>
-        </div>
+        
         <div class="item-banner">
             <div class="banner-info banner-view header-hero-03">    
                 <div class="overlay-2"></div>
                 <div class="container">
                     <div class="content-banner">
-                        <span class="text-tag">Promocionales</span>
-                        <h1 class="title-banner">Promocionales únicos que destacan tu marca</h1>
-                        <!-- <a href="#" class="btn btn-primary btn-lg my-3">Ver Servicios</a> -->
+                        <span>Promocionales</span>
+                        <h1>Promocionales únicos que destacan tu marca</h1>
+
+                        <div class="container grid-services">
+                            <div class="row">
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-impresion-screen"></i>
+                                    <div class="content-service">
+                                        <span>Servicio</span>
+                                        <h5>Impresión Screen</h5>
+                                    </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-microinyeccion"></i>
+                                    <div class="content-service">
+                                        <span>Servicio</span>
+                                        <h5>Microinyección</h5>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+        
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-corte-grabado-laser"></i>
+                                        <div class="content-service">
+                                            <span>Servicio</span>
+                                            <h5>Corte y Grabado Láser</h5>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
+                                    <div class="item-services">
+                                        <i class="icon-electrosellado"></i>
+                                        <div class="content-service">
+                                            <span>Servicio</span>
+                                            <h5>Electrosellado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a href="#servicesPF" class="btn btn-primary">Ver servicios</a>
                     </div>
-                    <div class="container grid-services">
-                        <div class="row">
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-impresion-screen"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Impresión Screen</h5>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-microinyeccion"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Microinyección</h5>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-corte-grabado-laser"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Corte y Grabado Láser</h5>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-md-9 col-lg-5 item-grid d-flex align-items-center my-3">
-                                <i class="icon-electrosellado"></i>
-                                <div class="content-service">
-                                    <span>Servicio</span>
-                                    <h5>Electrosellado</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
+                    
 
                 </div>
             </div>
         </div>
     </div>
-
-    
 </div>
 <!-- Fin Banner Main -->
 <!-- Acerca de Nosotros -->
@@ -312,7 +302,7 @@
         </div>
         <div class="col-12 col-md-12">
             <div class="row services-grid">
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-termoformado"></i>
@@ -322,7 +312,7 @@
                         <p>Formación de lámina plástica con calor (120-180 °C) y vacío (600-760 mmHg) usando molde, típicamente de madera, resina o aluminio.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-grafado"></i>
@@ -332,7 +322,7 @@
                         <p>Proceso mediante el cual se realiza una marca de doblez generalmente sobre una lámina plástica en frío (PET, PP ).</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-termodoblado"></i>
@@ -342,7 +332,7 @@
                         <p>Proceso mediante el cual se realiza una marca de doblez generalmente sobre una lámina plástica en caliente (PS, PET, PP, entre otros).</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-troquelado"></i>
@@ -352,7 +342,7 @@
                         <p>Corte, plegado y semicorte en papel, cartón o termoplástico con cuchillas en madera según diseño, alta productividad.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-impresion-screen"></i>
@@ -362,7 +352,7 @@
                         <p>Impresión mediante tinta y malla enmarcada, bloqueando áreas con emulsión para distintos materiales, incluyendo plásticos, en múltiples colores.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-microinyeccion"></i>
@@ -372,7 +362,7 @@
                         <p>Piezas de plastisol (PVC) en relieve se crean con moldes de aluminio, calor y pigmentos para diseño personalizado.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-corte-grabado-laser"></i>
@@ -382,7 +372,7 @@
                         <p>Corte térmico con haz láser, fundiendo o vaporizando materiales con luz coherente y gas de alta presión, alta velocidad.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                     <div class="icon-service-box">
                         <div class="icon-main">
                             <i class="icon-electrosellado"></i>
@@ -1192,7 +1182,7 @@
 <footer class="footer">
     <div class="container py-5">
       <div class="row d-flex align-items-start">
-        <div class="col-12 col-md-12">
+        <div class="col-12 col-md-12 col-lg-3">
             <div class="logo-footer">
                 <img src="images/logos/logo-promotion-factory--white-letters.svg" alt="Logo Promotion Factory">
             </div>
@@ -1205,7 +1195,7 @@
             <p><i class="fa-solid fa-envelope"></i>   contacto@promotionfactory.com</p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-6 col-md-6 col-lg-2">
             <div class="links-footer">
               <h5 class="title-social">Enlaces</h5>
               <ul class="list-inline">
@@ -1227,7 +1217,7 @@
               </ul>
             </div>
           </div>
-        <div class="col-12 col-md-6 col-lg-5 offse-lg-1">
+        <div class="col-6 col-md-12 col-lg-3 offse-lg-1">
           <div class="social-footer">
             <h5 class="title-social">Síguenos</h5>
             <ul class="list-inline">
@@ -1238,7 +1228,7 @@
             <div class="form-suscripcion">
                 <h5>Suscribete a nuestro Newsletter</h5>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
+                    <input type="mail" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
                     <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </div>
@@ -1249,13 +1239,15 @@
     <div class="legal-seccion">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-12 text-center">
                     <p class="my-2">Copyright Promotion Factory 2024 -  Todos los derechos reservados</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <a href="#">Politica Privacidad</a>
-                    <a href="#">Preferencias Cookies</a>
-                    <a href="#">Terminos de Servicio</a>
+                <div class="col-12 col-md-12">
+                    <div class="legal-links">
+                        <a href="#">Politica Privacidad</a>
+                        <a href="#">Preferencias Cookies</a>
+                        <a href="#">Terminos de Servicio</a>
+                    </div>
                 </div>
             </div>
         </div>

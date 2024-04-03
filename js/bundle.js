@@ -6,15 +6,52 @@ $(".navbar-toggler").on("click", function () {
   $("header").toggleClass("active");
 });
 $(document).on("ready", function () {
-  if ($(window).width() > 1090) {
+  if ($(window).width() > 992) {
     $("header").removeClass("active");
   }
   $(window).on("resize", function () {
-    if ($(window).width() > 1090) {
+    if ($(window).width() > 992) {
       $("header").removeClass("active");
     }
   });
 });
+
+
+
+/* Menu links Activos */
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+      link.addEventListener("click", function() {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+        });
+        this.classList.add("active");
+      });
+    });
+});
+
+
+/* Show & Hidden Barra Header */
+
+let barTopHeader = document.getElementById('barHeader');
+let lastScrollPosition = 0;
+
+window.addEventListener('scroll', function(){
+  let currentScrollPosition = window.scrollY;
+
+  if (currentScrollPosition > lastScrollPosition) {
+    barTopHeader.classList.add('hidden-menu');
+  }else {
+    barTopHeader.classList.remove('hidden-menu');
+  }
+
+  lastScrollPosition = currentScrollPosition;
+
+});
+
+
+
 
 
 /* Menus Color Transparente */
@@ -40,23 +77,6 @@ $(document).on("ready", function () {
     }
   }
 }); */
-
-
-
-
-/* Menu links Activos */
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    navLinks.forEach(link => {
-      link.addEventListener("click", function() {
-        navLinks.forEach(link => {
-          link.classList.remove("active");
-        });
-        this.classList.add("active");
-      });
-    });
-});
 
 $(document).ready(function() {
     var $galleryContainer = $('.grid-proyectos').isotope({
