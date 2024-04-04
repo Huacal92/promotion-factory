@@ -12120,6 +12120,75 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
+.bg-text-white {
+  background: #fff;
+  padding: 0 15px;
+  line-height: 1.45;
+  border: 3px solid #eb651d;
+}
+
+.big-title {
+  font-size: 4.6rem !important;
+}
+
+@media (max-width: 992px) {
+  .bg-text-white {
+    padding: 0;
+  }
+  .big-title {
+    font-size: 3.9rem !important;
+  }
+}
+#btnVolverArriba {
+  display: block; /* Ocultar el botón por defecto */
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+  border: 1px solid #f8f9fa;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 999;
+}
+#btnVolverArriba:hover {
+  background-color: black;
+}
+
+.show-btn {
+  display: block;
+}
+
+#btnWhatsApp {
+  display: block; /* Ocultar el botón por defecto */
+  position: fixed;
+  width: 60px;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+#btnWhatsApp::after {
+  content: "1";
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background: red;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  line-height: 0.4;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
 /* Navegacion*/
 .site-header {
   background: #fff;
@@ -12137,13 +12206,13 @@ p {
   margin: 0 10px;
 }
 .bar-header a {
-  color: #f8f9fa;
+  color: #000;
   font-size: 0.95rem;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
 }
 .bar-header a:hover {
-  color: #fff !important;
+  color: #000;
   text-decoration: underline !important;
 }
 .bar-header a i {
@@ -12153,7 +12222,7 @@ p {
 .bar-header .dropdown-toggle {
   background: none;
   border: none;
-  color: #f8f9fa;
+  color: #000;
 }
 .bar-header .dropdown-menu li a {
   color: #6c757d !important;
@@ -12759,6 +12828,9 @@ p {
   }
 }
 /* Stylos Popoup */
+.content-popup-pf {
+  position: relative;
+}
 .content-popup-pf .content-inner {
   position: relative;
   background: #f8f9fa;
@@ -12962,7 +13034,7 @@ p {
   background-repeat: no-repeat;
   transform: rotate(180deg);
   width: 100%;
-  height: 330px;
+  height: 390px;
   z-index: 1;
   opacity: 1;
 }
@@ -13199,6 +13271,7 @@ p {
 .footer .legal-seccion p {
   color: #f8f9fa;
   font-weight: 700;
+  font-size: 0.85rem;
 }
 .footer .legal-seccion .legal-links {
   text-align: center;
@@ -13207,6 +13280,7 @@ p {
   color: #f8f9fa;
   margin: 0 10px;
   padding: 20px 0;
+  font-size: 0.85rem;
 }
 
 /* Estadisticas */

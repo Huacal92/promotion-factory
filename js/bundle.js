@@ -33,11 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /* Show & Hidden Barra Header */
-
-let barTopHeader = document.getElementById('barHeader');
-let lastScrollPosition = 0;
-
 window.addEventListener('scroll', function(){
+  let barTopHeader = document.getElementById('barHeader');
+  let lastScrollPosition = 0;
   let currentScrollPosition = window.scrollY;
 
   if (currentScrollPosition > lastScrollPosition) {
