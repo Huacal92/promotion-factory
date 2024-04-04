@@ -12007,39 +12007,40 @@ textarea {
 }
 
 .pulse {
-  --hover:$primary;
   -webkit-animation: pulse 3s infinite;
   animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--hover);
+    box-shadow: 0 0 0 0 var(#eb651d);
     color: #fd7e14 !important;
   }
   25% {
-    box-shadow: 0 0 0 0.3em var(--hover);
+    box-shadow: 0 0 0 0.3em var(#eb651d);
     color: #eb651d !important;
   }
   100% {
-    box-shadow: 0 0 0 0 var(--hover) !important;
+    box-shadow: 0 0 0 0 var(#eb651d) !important;
     color: #fd7e14 !important;
   }
 }
 .btn-pf {
-  color: #fff !important;
+  color: #f8f9fa !important;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease-in-out !important;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease-in-out;
   background: linear-gradient(45deg, rgb(235, 101, 29) 0%, rgb(236, 109, 30) 35%, rgb(240, 130, 34) 88%, rgb(242, 144, 36) 100%);
+  font-size: 1.1rem;
 }
 .btn-pf i {
-  font-size: 21px;
+  font-size: 19px;
   margin-right: 3px;
 }
 .btn-pf:hover {
-  color: #f8f9fa !important;
+  color: #fff !important;
+  transform: scale(1.1);
 }
 
 /* Tipografia */
@@ -12689,6 +12690,7 @@ p {
   margin-bottom: 15px;
   border-radius: 20px;
   position: relative;
+  background: #e9ecef;
 }
 .icon-service-box .line-box::after {
   content: "";
@@ -13243,6 +13245,12 @@ p {
   color: #eb651d;
   position: relative;
 }
+.footer .contacto-footer p a {
+  color: #f8f9fa;
+}
+.footer .contacto-footer p a:hover {
+  color: #eb651d !important;
+}
 .footer .links-footer {
   list-style: none;
 }
@@ -13254,6 +13262,12 @@ p {
   font-weight: 600;
 }
 .footer .links-footer li a:hover {
+  color: #eb651d !important;
+}
+.footer .links-footer li a:focus {
+  color: #eb651d !important;
+}
+.footer .links-footer li a:active {
   color: #eb651d !important;
 }
 .footer .social-footer a {
