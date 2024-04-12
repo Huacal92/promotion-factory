@@ -12190,6 +12190,31 @@ p {
   font-size: 14px;
 }
 
+/* Validet Jquery */
+input.error, textarea.error {
+  border: 1px solid #dc3545 !important;
+}
+
+label.error {
+  margin-top: 10px;
+  color: #dc3545;
+}
+
+#mensajeExito {
+  width: 60%;
+  margin: 0 auto;
+  background: rgba(248, 249, 250, 0.8);
+  color: #198754;
+  border: 1px solid #198754;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+#mensajeExito i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
 /* Navegacion*/
 .site-header {
   background: #fff;
@@ -12337,6 +12362,7 @@ p {
   width: 100%;
   height: 100vh;
   margin-top: 110px;
+  overflow: hidden;
 }
 .banner-pf .owl-one {
   width: 100%;
@@ -12474,7 +12500,7 @@ p {
   text-align: center;
   padding: 20px 0;
   bottom: 110px;
-  z-index: 5;
+  /* z-index: 12; */
 }
 
 .banner-pf .owl-carousel .owl-dot {
@@ -13135,8 +13161,7 @@ p {
 .contact-pf .contact-section {
   position: relative;
   width: 100%;
-  height: 100%;
-  max-height: 990px;
+  height: auto;
   overflow: hidden;
 }
 .contact-pf .contact-section .title-header {
@@ -13178,7 +13203,7 @@ p {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
 }
-.contact-pf .contact-section .form-contact-pf input, .contact-pf .contact-section .form-contact-pf textarea {
+.contact-pf .contact-section .form-contact-pf input[type=text], .contact-pf .contact-section .form-contact-pf input[type=email], .contact-pf .contact-section .form-contact-pf textarea {
   background: #f8f9fa;
   border: 1px solid #dee2e6;
   color: #343a40;
@@ -13196,6 +13221,9 @@ p {
 }
 .contact-pf .contact-section .form-contact-pf button {
   color: #f8f9fa;
+}
+.contact-pf .contact-section .form-contact-pf .form-check input[checkbox] {
+  width: 10px;
 }
 
 /* 

@@ -28,7 +28,7 @@
     <script src="https://kit.fontawesome.com/d99dc7685c.js" crossorigin="anonymous"></script>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
       
 </head>
 <body>
@@ -40,7 +40,8 @@
                     <div class="col-8 col-md-8">
                         <div class="contact-bar-top">
                             <ul class="d-flex align-items-center justify-content-start" style="height: 40px;">
-                                <li class="nav-item"><a href="https://wa.link/9nmirk"><i class="fa-brands fa-whatsapp"></i> +57 317 843 3069</a></li>
+                                <li class="nav-item"><a href="https://wa.link/9nmirk" target="_blank"><i class="fa-brands fa-whatsapp"></i> +57 317 843 3069</a></li>
+                                <li class="nav-item"><a href="https://wa.link/mdawif" target="_blank"><i class="fa-brands fa-whatsapp"></i> +57 317 441 1004</a></li>
                                 <li class="nav-item"><a href="mailto:administracion@promotionfactory.com.co"><i class="fa-solid fa-envelope"></i> administracion@promotionfactory.com.co</a></li>
                             </ul>
                         </div>
@@ -94,7 +95,7 @@
                     </ul>
                     <div class="menu-rigth d-flex align-items-center justify-content-between">
                         <div class="me-lg-3 mt-lg-0 me-lg-4 py-3">
-                            <a href="#" class="btn btn-primary btn-lg btn-pf"> <i class="fa-brands fa-whatsapp"></i> Cotizar Ahora</a>
+                            <a href="https://wa.link/9nmirk" target="_blank" class="btn btn-primary btn-lg btn-pf"> <i class="fa-brands fa-whatsapp"></i> Cotizar Ahora</a>
                         </div>
                         
                     </div>
@@ -1155,21 +1156,30 @@
                         <p class="card-text my-3">En <b>Promotion Factory,</b> estamos comprometidos con la excelencia en soluciones creativas y personalizadas para impulsar el éxito de tu marca.</p>
                     </div>
                   <div class="card-body ">
-                    <form id="formulario-contacto" action="" method="POST">
-                      <div class="mb-3 field-row">
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombres" required>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+                    <!-- Form Contact -->
+                    <form id="formularioContacto" action="x" method="post">
+                      <div class=" row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombres" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
                       </div>
                       <div class="mb-3">
                         <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto" required>
                       </div>
                       <div class="mb-3">
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje..."></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje..." required></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="">
                       </div>
                       <div class="d-grid gap-2 col-6 mx-auto my-5">
-                        <button type="submit" class="btn btn-primary btn-lg btn-form py-3">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" id="buttonSubmit" class="btn btn-primary btn-lg btn-form py-3">Enviar <i class="fa-solid fa-paper-plane"></i></button>
                       </div>
                     </form>
+                    <div id="mensajeExito" style="display: none;"><i class="fa-regular fa-circle-check"></i> Su mensaje se ha enviado correctamente.</div>
                   </div>
                 </div>
               </div>
@@ -1179,7 +1189,6 @@
 </section>
 <!-- Boton Volver Arriba  -->
 <a id="btnWhatsApp" href="https://wa.link/9nmirk" target="_blank" ><img src="images/logo-whatsapp.webp"  alt="Logo fa-whatsapp"></a>
-
 <!-- Inicio Footer -->
 <footer class="footer">
     <div class="container py-5">
@@ -1220,21 +1229,21 @@
             </div>
           </div>
         <div class="col-6 col-md-12 col-lg-3 offse-lg-1">
-          <div class="social-footer">
+          <!-- <div class="social-footer">
             <h5 class="title-social">Síguenos</h5>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
             </ul>
-            <div class="form-suscripcion">
-                <h5>Suscribete a nuestro Newsletter</h5>
-                <div class="input-group mb-3">
-                    <input type="mail" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
-                    <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa-solid fa-paper-plane"></i></button>
-                </div>
+          </div> -->
+          <div class="form-suscripcion">
+            <h5>Suscribete a nuestro Newsletter</h5>
+            <div class="input-group mb-3">
+                <input type="mail" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa-solid fa-paper-plane"></i></button>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </div>
